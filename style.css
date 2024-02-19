@@ -1,0 +1,108 @@
+/* style.css */
+
+/** {
+    border: 1px solid red;
+}*/
+
+.set-padding {
+    padding: 24px 1in;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex: none;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'roboto', sans-serif;
+}
+
+.hero, .footer {
+    background-color: #1F2937;
+}
+
+/* section 1 - hero */
+
+/* section 1a - menu bar */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 48px 0;
+}
+
+.logo {
+    display: flex;
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.header ul {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    gap: 16px;
+}
+
+.secondary {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+/* section 1b - intro bar */
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+.intro-container {
+    width:200px;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+
+.hero .main{
+    font-size: 48px;
+    font-weight: bolder;
+    color:#F9FAF8;
+}
+
+.information-header {
+    font-size: 36px;
+    text-align: center;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+.main1-container {
+    display: flex;
+}
+
+.main2 {
+    background-color: #E5E7EB;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1F2937;
+}
+
+.quote-source {
+    font-size: 18px;
+    color: #1F2937;
+    text-align: right;
+}
+
+.modal {
+    background-color: #3882f6;
+    color: #E5E7EB;
+    padding: 6px;
+    border-radius: 5px;
+    border: blue solid 1px;
+}
