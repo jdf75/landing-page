@@ -5,7 +5,7 @@
 }*/
 
 .set-padding {
-    padding: 24px 1in;
+    padding: 0 1in;
 }
 
 body {
@@ -21,6 +21,11 @@ body {
     background-color: #1F2937;
 }
 
+.footer {
+    padding: 15px;
+    text-align: center;
+}
+
 /* section 1 - hero */
 
 /* section 1a - menu bar */
@@ -28,7 +33,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 0 48px 0;
+    padding: 15px 0 100px 0;
 }
 
 .logo {
@@ -42,7 +47,7 @@ body {
     list-style: none;
     margin: 0px;
     padding: 0px;
-    gap: 16px;
+    gap: 25px;
 }
 
 .secondary {
@@ -54,42 +59,97 @@ body {
 .intro {
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 0px;
+    align-items: self-start;
+    gap: 50px;
+    padding: 0 0 25px 0;
 }
 
-.intro-container {
+.intro-left {
     width:200px;
     margin: 0;
     padding: 0;
     flex: 1;
 }
 
-.hero .main{
+.intro-right {
+    width:auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+#hero-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    padding: 0;
+}
+
+.intro-left .main{
     font-size: 48px;
     font-weight: bolder;
     color:#F9FAF8;
+    padding: 0 0 25px 0;
+}
+
+.intro-left .secondary {
+    padding: 0 0 25px 0;
+}
+
+button {
+    background-color: #3882f6;
+    border-radius:10px;
+    color: #F9FAF8;
+    padding: 4px 16px;
+    border: 0px;
+    word-wrap: 0;
+}
+
+.modal button {
+    border: 1px solid #F9FAF8;
 }
 
 .information-header {
     font-size: 36px;
     text-align: center;
-    font-weight: bolder;
     color: #1F2937;
+    padding: 25px 0;
 }
 
 .main1-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 0 25px 0;
+    gap: 50px;
 }
+
+.box {
+    width: 100px;
+    text-align: center;
+}
+
+.box-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid #3882f6;
+    border-radius: 10px;
+}
+
+.box-text {
+    font-size: 9px;
+}
+
 
 .main2 {
     background-color: #E5E7EB;
+    padding: 50px 1.5in;
 }
 
 .quote {
     font-size: 36px;
     font-style: italic;
-    font-weight: lighter;
+    font-weight: 300;
     color: #1F2937;
 }
 
@@ -103,6 +163,30 @@ body {
     background-color: #3882f6;
     color: #E5E7EB;
     padding: 6px;
-    border-radius: 5px;
-    border: blue solid 1px;
+    border-radius: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 25px;
+    padding: 25px 0.5in;
+    margin: 50px 0;
+}
+
+.modal-left {
+    flex: 1;
+}
+
+.modal-right {
+    flex: 0;
+    flex-basis: auto;
+    text-align: right;
+}
+
+.cta-head {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.cta-body {
+
 }
