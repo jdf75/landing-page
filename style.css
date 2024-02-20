@@ -1,8 +1,8 @@
 /* style.css */
 
-/** {
+* {
     border: 1px solid red;
-}*/
+}
 
 .set-padding {
     padding: 0 1in;
@@ -11,88 +11,13 @@
 body {
     display: flex;
     flex-direction: column;
-    flex: none;
-    padding: 0px;
-    margin: 0px;
     font-family: 'roboto', sans-serif;
-}
-
-.hero, .footer {
-    background-color: #1F2937;
-}
-
-.footer {
-    padding: 15px;
-    text-align: center;
-}
-
-/* section 1 - hero */
-
-/* section 1a - menu bar */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 0 100px 0;
-}
-
-.logo {
-    display: flex;
-    font-size: 24px;
-    color: #F9FAF8;
-}
-
-.header ul {
-    display: flex;
-    list-style: none;
     margin: 0px;
-    padding: 0px;
-    gap: 25px;
 }
 
-.secondary {
+.normal-font {
     font-size: 18px;
     color: #E5E7EB;
-}
-
-/* section 1b - intro bar */
-.intro {
-    display: flex;
-    justify-content: center;
-    align-items: self-start;
-    gap: 50px;
-    padding: 0 0 25px 0;
-}
-
-.intro-left {
-    width:200px;
-    margin: 0;
-    padding: 0;
-    flex: 1;
-}
-
-.intro-right {
-    width:auto;
-    margin: 0px;
-    padding: 0px;
-}
-
-#hero-img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    padding: 0;
-}
-
-.intro-left .main{
-    font-size: 48px;
-    font-weight: bolder;
-    color:#F9FAF8;
-    padding: 0 0 25px 0;
-}
-
-.intro-left .secondary {
-    padding: 0 0 25px 0;
 }
 
 button {
@@ -104,18 +29,72 @@ button {
     word-wrap: 0;
 }
 
-.modal button {
-    border: 1px solid #F9FAF8;
+/* section 1 - hero */
+
+.hero {
+    background-color: #1F2937;
 }
 
-.information-header {
+/* section 1a - menu bar */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+    padding: 15px 0 100px 0;
+}
+
+.logo {
+    display: flex;
+    flex: 0;
+    width: auto;
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.header ul {
+    display: flex;
+    flex: 1;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    gap: 25px;
+}
+
+/* section 1b - intro */
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    gap: 50px;
+    padding: 0 0 25px 0;
+}
+
+.main-font {
+    font-size: 48px;
+    font-weight: bolder;
+    color:#F9FAF8;
+    padding: 0 0 25px 0;
+}
+
+.intro .normal-font {
+    padding: 0 0 25px 0;
+}
+
+#hero-img {
+    width: 300px;
+    height: auto;
+    padding: 0;
+}
+
+/* section 2 - destinations */
+.destinations-header {
     font-size: 36px;
     text-align: center;
     color: #1F2937;
     padding: 25px 0;
 }
 
-.main1-container {
+.destinations-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -123,12 +102,12 @@ button {
     gap: 50px;
 }
 
-.box {
+.destination {
     width: 100px;
     text-align: center;
 }
 
-.box-img {
+.destination-img {
     width: 100px;
     height: 100px;
     object-fit: cover;
@@ -136,12 +115,12 @@ button {
     border-radius: 10px;
 }
 
-.box-text {
-    font-size: 9px;
+.destination-title {
+    font-size: 12px;
 }
 
-
-.main2 {
+/* section 3 - quotes */
+.quote-section {
     background-color: #E5E7EB;
     padding: 50px 1.5in;
 }
@@ -160,13 +139,13 @@ button {
 }
 
 .modal {
-    background-color: #3882f6;
-    color: #E5E7EB;
-    padding: 6px;
-    border-radius: 10px;
     display: flex;
     justify-content:space-between;
     align-items: center;
+    color: #E5E7EB;
+    background-color: #3882f6;
+    padding: 6px;
+    border-radius: 10px;
     gap: 25px;
     padding: 25px 0.5in;
     margin: 50px 0;
@@ -176,17 +155,25 @@ button {
     flex: 1;
 }
 
+.modal-header {
+    font-weight: bold;
+    font-size: 24px;
+}
+
 .modal-right {
     flex: 0;
     flex-basis: auto;
     text-align: right;
 }
 
-.cta-head {
-    font-weight: bold;
-    font-size: 24px;
+.modal button {
+    border: 2px solid #F9FAF8;
 }
 
-.cta-body {
-
+/* section 4 - footer */
+.footer {
+    background-color: #1F2937;
+    bottom: 0px;
+    text-align: center;
+    padding: 15px;
 }
